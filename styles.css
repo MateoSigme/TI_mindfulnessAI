@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
     background-color: transparent;
 
     font-family: 'Trebuchet MS', sans-serif;
@@ -13,16 +13,17 @@ body {
 }
 
 
+
 header {
     position: relative;
+    /*background-image: url('main_imgs/triang.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255); /* Set the base text color */
     padding: 10px;
     text-align: center;
     overflow: hidden;
 }
-
 
 header::before {
     content: '';
@@ -31,11 +32,13 @@ header::before {
     right: 0;
     bottom: 0;
     left: 0;
-    mix-blend-mode: overlay; 
+    /*background: linear-gradient(to right, #8f8383, #0066ff); *//* Gradient for overlay */
+    mix-blend-mode: overlay; /* Blend mode for the overlay */
 }
 
 
 nav {
+    /* background-color: rgba(49, 49, 49, 0.98); */
     text-align: center;
     padding: 10px;
     font-size: 20px;
@@ -45,16 +48,16 @@ nav a {
     text-decoration: none;
     color: #fff;
     padding: 20px;
-    display: inline-block;
+    display: inline-block; /* Ensures the links are on the same line */
 }
 
 nav a:hover {
-    color: rgb(59, 61, 194);
+    color: rgb(59, 61, 194); /* Blue color on hover */
 }
 
 .div_hh {
     border-radius: 23px;
-    background-color: rgba(40, 40, 44, 0.9);
+    background-color: rgba(40, 40, 44, 0.9); /* Adjust the last value (0.7) for the desired opacity (0 is transparent, 1 is opaque) */
     color: rgb(234, 240, 255);
     width: 70%;
     margin: 25px auto ;
@@ -140,16 +143,16 @@ footer {
 
 button {
     display: inline-block;
-    padding: 15px 20px;
-    font-size: 16px;
-    width: 150px;
-    height: 50px;
+    padding: 15px 20px; /* Dostosuj padding do preferencji */
+    font-size: 16px; /* Dostosuj rozmiar czcionki do preferencji */
+    width: 150px; /* Dostosuj szerokość przycisku do preferencji */
+    height: 50px; /* Dostosuj wysokość przycisku do preferencji */
     text-align: center;
     text-decoration: none;
-    background-color: #04115a; 
-    color: #fff;
-    border-radius: 8px;
-    border: none;
+    background-color: #04115a; /* Kolor tła przycisku */
+    color: #fff; /* Kolor tekstu przycisku */
+    border-radius: 8px; /* Zaokrąglenie narożników */
+    border: none; /* Usunięcie obramowania */
     cursor: pointer;
     }
 
@@ -194,16 +197,9 @@ h1 {
 }
 
 .div_hh .alternating-content img {
-    max-width: 45%;
+    max-width: 45%; /* Adjust the image width as needed */
     border-radius: 23px;
     max-width: 150px;
-    margin: 0 auto;
-}
-
-#explain {
-    max-width: 50%;
-    border-radius: 23px;
-    max-width: 200px;
     margin: 0 auto;
 }
 
@@ -221,7 +217,6 @@ h1 {
     background-color: transparent;
     margin-left: 30%;
 }
-
 
 .get_started img {
     width: 45%; /* Dostosuj szerokość obrazka według potrzeb */
