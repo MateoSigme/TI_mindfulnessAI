@@ -67,7 +67,12 @@ nav a:hover {
 
 .ggh {
     background-color: rgba(40, 40, 44, 0.9);
+    
+}
 
+.ggh p {
+    font-size: 21px;
+    text-align: justify;
 }
 
 
@@ -285,6 +290,6 @@ button:hover {
 }
 
 #logo {
-    height: 50px; 
+    height: 60px; 
     margin-right: 10px; 
 }
