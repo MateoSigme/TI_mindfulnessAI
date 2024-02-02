@@ -310,7 +310,7 @@ button:hover {
     margin: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .input-container {
         width: calc(100% - 20px);
     }
