@@ -5,7 +5,7 @@ body {
     background-position: center;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
     background-color: transparent;
-    
+
     font-family: 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
@@ -232,9 +232,11 @@ h1 {
 
 .input-container {
     background-color: transparent;
-    border-style: solid;
+    /*border-style: solid;*/
     border-color: rgb(20, 19, 19);
-    margin: 25px;
+    margin: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     text-align: center;
     font-size: 17px;
     border-radius: 23px;
