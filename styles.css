@@ -191,8 +191,9 @@ h1 {
     background-color: transparent;
 }
 
+
 .div_hh .alternating-content img {
-    max-width: 45%; /* Adjust the image width as needed */
+    max-width: 45%;
     border-radius: 23px;
     max-width: 150px;
     margin: 0 auto;
