@@ -289,7 +289,6 @@ button:hover {
     margin-right: 10px; 
 }
 
-
 /* Remaining styles remain unchanged */
 
 .content-container {
@@ -314,12 +313,8 @@ button:hover {
     .input-container {
         width: calc(100% - 20px);
     }
-}
 
-/* Add a new class for section titles */
-.section-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    margin: 20px;
+    .form-container {
+        justify-content: center; /* Center items when there is not enough space */
+    }
 }
