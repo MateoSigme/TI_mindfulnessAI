@@ -211,18 +211,20 @@ h1 {
     align-items: center;
     margin-bottom: 20px;
     background-color: transparent;
+    margin-left: 30%;
 }
 
 .get_started img {
     width: 45%; /* Dostosuj szerokość obrazka według potrzeb */
-    max-width: 120px; /* Maksymalna szerokość obrazka */
+    max-width: 110px; /* Maksymalna szerokość obrazka */
     height: auto; /* Zachowaj proporcje obrazka */
 }
 
 .get_started h2 {
     width: 45%; /* Dostosuj szerokość nagłówka według potrzeb */
     text-align: left;
-    margin-left: 20px; /* Dodaj odstęp między obrazkiem a tekstem */
+    font-size: xx-large;
+    margin-left: 40px;
 }
 
 /**/
@@ -232,7 +234,7 @@ h1 {
 .input-container {
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(26, 25, 25);
+    border-color: rgb(20, 19, 19);
     margin: 25px;
     text-align: center;
     font-size: 17px;

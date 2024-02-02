@@ -1,291 +1,475 @@
+body {
+  background-image: url('bg5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-color: transparent;
 
-
-/* Style the container with a rounded border, grey background and some padding and margin */
-.block {
-    border: 2px solid wheat;
-    background-color: transparent;
-    backdrop-filter: blur(25px);
-    border-radius: 5px;
-    padding: 16px;
-    margin: 16px 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Clear floats after containers */
-.block::after {
-    content: "";
-    clear: both;
-    display: table;
+
+
+
+header {
+  position: relative;
+  /*background-image: url('main_imgs/triang.jpg');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255); /* Set the base text color */
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
 }
 
-/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-.block img {
-    float: left;
-    margin-right: 20px;
-    border-radius: 50%;
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*background: linear-gradient(to right, #8f8383, #0066ff); *//* Gradient for overlay */
+  mix-blend-mode: overlay; /* Blend mode for the overlay */
 }
 
-/* Increase the font-size of a span element */
-.block span {
-    font-size: 15px;
-    margin-right: 15px;
+
+nav {
+  /* background-color: rgba(49, 49, 49, 0.98); */
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
 }
 
-/* Add media queries for responsiveness. This will center both the text and the image inside the container */
-@media (max-width: px) {
-  .container1 {
-    text-align: center;
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  display: inline-block; /* Ensures the links are on the same line */
+}
+
+nav a:hover {
+  color: rgb(59, 61, 194); /* Blue color on hover */
+}
+
+.div_hh {
+  border-radius: 23px;
+  background-color: rgba(40, 40, 44, 0.9); /* Adjust the last value (0.7) for the desired opacity (0 is transparent, 1 is opaque) */
+  color: rgb(234, 240, 255);
+  width: 70%;
+  margin: 25px auto ;
+  text-align: center;
+  font-size: 17px;
+}
+
+.ggh {
+  background-color: rgba(40, 40, 44, 0.9);
+
+}
+
+
+.divf {
+  margin-bottom: 50px;
+}
+
+div {
+  /*background-color: rgba(0, 0, 0, 0.97); */
+  background-color: rgba(12, 11, 11, 0.97); 
+  color: #dadada;
+  margin: 0 auto ;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  
+}
+
+
+footer {
+  background-image: url('triang.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*czesc dla pricing*/
+
+.logoimg {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(121, 120, 124, 0.35);
+  background-color:   rgba(40, 40, 44, 0.9);;
+  border-radius: 23px;
+  width: 20%; /* Możesz dostosować na podstawie preferencji */
+}
+
+
+.logoimg .product_description {
+  text-align: left;
+  margin: 10px; /* Dodałem odstęp od tekstu do krawędzi kontenera */
+}
+
+.logoimg img {
+  width: 100px; /* Dostosuj szerokość obrazków według potrzeb */
+  height: auto; /* Zachowaj proporcje */
+  border-radius: 23px;
+}
+
+.logoimg h2 {
+  margin: 8px;
+}
+
+.pricing {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+button {
+  display: inline-block;
+  padding: 15px 20px; /* Dostosuj padding do preferencji */
+  font-size: 16px; /* Dostosuj rozmiar czcionki do preferencji */
+  width: 150px; /* Dostosuj szerokość przycisku do preferencji */
+  height: 50px; /* Dostosuj wysokość przycisku do preferencji */
+  text-align: center;
+  text-decoration: none;
+  background-color: #04115a; /* Kolor tła przycisku */
+  color: #fff; /* Kolor tekstu przycisku */
+  border-radius: 8px; /* Zaokrąglenie narożników */
+  border: none; /* Usunięcie obramowania */
+  cursor: pointer;
   }
 
-  .block img {
-    margin: auto;
-    float: none;
-    display: block;
+
+.button_low:hover {
+  background-color: #dadada;
+}
+
+.button_mid:hover {
+  background-color: #14135a;
+}
+
+.button_high:hover {
+  background-color: #0f4e22;
+}
+
+.product_description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.price_levels li{
+  text-align: left;
+}
+
+
+
+
+
+/*czesc arkusza dla home*/
+
+h1 {
+  font-size: 30px;
+}
+
+.div_hh .alternating-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.div_hh .alternating-content img {
+  max-width: 45%; /* Adjust the image width as needed */
+  border-radius: 23px;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.div_hh .alternating-content p {
+  max-width: 50%; /* Adjust the description width as needed */
+  text-align: left;
+  margin-left: 20px; 
+}
+
+
+.get_started {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+  margin-left: 25%;
+}
+
+.get_started img {
+  width: 45%; /* Dostosuj szerokość obrazka według potrzeb */
+  max-width: 110px; /* Maksymalna szerokość obrazka */
+  height: auto; /* Zachowaj proporcje obrazka */
+}
+
+.get_started h2 {
+  width: 45%; /* Dostosuj szerokość nagłówka według potrzeb */
+  text-align: left;
+  font-size: xx-large;
+  margin-left: 40px;
+}
+
+/**/
+
+
+
+.input-container {
+  background-color: transparent;
+  border-style: solid;
+  border-color: rgb(20, 19, 19);
+  margin: 25px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 23px;
+  display: inline-block;
+  margin-bottom: 10px; /* Add space below the input containers */
+  box-sizing: border-box; /* Include padding in width calculation */
+
+  /* Initial width for larger screens */
+  width: calc(50% - 60px);
+
+}
+
+@media (max-width: 768px) {
+  .input-container {
+      width: calc(100% - 20px); /* Full width on smaller screens */
   }
 }
 
-.simple-rating{
-    position: relative;
-    font-size: 40px;
-    display: inline-block;
-}
-.simple-rating::before{
-    content: "★★★★★";
-    display: block;
-    color: #eed117;
-}
-.simple-rating__items{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    overflow: hidden;
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  height: auto;
+  resize: none;
+  /* Add an explicit width property */
+  width: 100%;
 }
 
-.simple-rating__items{
-    position: absolute;
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    top: 0;
-    left: 0;
+button {
+  background-color: rgba(62, 62, 66, 0.9);;
+
 }
 
 .wrapper {
-    display: inline-flex;
-    list-style: none;
+  display: inline-flex;
+  list-style: none;
+  
 }
 
 .wrapper .icon{
-    position: relative;
-    background: rgb(165, 207, 207);
-    border-radius: 50%;
-    padding: 15px;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  background: rgb(145, 161, 175);
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .wrapper .tooltip{
-    position: absolute;
-    top: 0;
-    font-size: 0.8rem;
-    background: #fff;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  top: 0;
+  font-size: 0.8rem;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.wrapper .tooltip{
-    position: absolute;
-    top: 0;
-    font-size: 0.8rem;
-    background: #fff;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
+
 
 .wrapper .tooltip::before{
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #fff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .wrapper .icon:hover .tooltip{
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 
 }
 
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip{
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before{
-    background: #0053fa;
-    color: #fff;
+  background: #0053fa;
+  color: #fff;
 }
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before{
-    background: #00d3ef;
-    color: #fff;
+  background: #00d3ef;
+  color: #fff;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before{
-    background:-webkit-linear-gradient(bottom right, #ffc54e 0%, #fc0538 50%, #6650f5 100%);
-    color: #fff;
+  background:-webkit-linear-gradient(bottom right, #ffc54e 0%, #fc0538 50%, #6650f5 100%);
+  color: #fff;
 }
 
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before{
-    background: #ff0000;
-    color: #fff;
+  background: #ff0000;
+  color: #fff;
 }
 
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before{
-    background: #013fbc;
-    color: #fff;
+  background: #013fbc;
+  color: #fff;
 }
 
-h4{
-
-    color: #fff;
+.simple-rating{
+  position: relative;
+  font-size: 40px;
+  display: inline-block;
 }
-h3{
-    text-align: center;
-    padding: 0 0 20px;
-    font-size: 30px;
-}
-
-h2{
-    color: #fff;
-}
-h3{
-    color: #fff;
+.simple-rating::before{
+  content: "★★★★★";
+  display: block;
+  color:  #dadada;
 }
 
- main{
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid wheat;
-    background-color: transparent;
-    backdrop-filter: blur(25px);
-    position: relative;
-  }
-  
-  
-  main header{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: white;
-    border-radius: 0 0 10px 10px;
-  }
-  
-  form{
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  input[type="text"],
-  input[type="email"]
+
+.simple-rating__items{
+  position: absolute;
+  visibility: hidden;
+}
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.block {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.block img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: px) {
+.container1 {
+  text-align: center;
+}
+
+.block img {
+  margin: auto;
+  float: none;
+  display: block;
+}
+}
+
+
+
+input[type="text"],
+input[type="email"]
 {
-    padding: 10px;
-    border: 2px solid white;
-    width: 100%;
-    border-radius: 25px;
-    outline: none;
-    background-color: transparent;
-    color: white;
-  }
+  padding: 10px;
+  border: 2px solid white;
+  width: 30%;
+  border-radius: 25px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
 
 
-    textarea {
-        padding: 10px;
-    border: 2px solid white;
-    width: 100%;
-    border-radius: 25px;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    
-    }
-
-
-
+  textarea {
+      padding: 60px;
+  border: 2px solid white;
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  background-color: transparent;
+  color: white;
   
-  .form_wrapper{
-    position: relative;
-    display: flex;
-    align-items: center;
   }
-  
  
+.gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
 
-  
-  .remember{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: white;
-  }
-  
+.gallery a{
+  width: 25rem;
+  height: 30rem;
+  margin: 3rem;
+  border-radius: 0.
+  5rem;
+  overflow: hidden;
+  box-shadow: 0 .3rem .5rem rgb(0, 0, 0, .8);
+}
 
-  
-  button{
-    border: none;
-    padding: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-  }
+.gallery a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
 
- 
-  p{
-    color: white;
-  }
-
-
-
+.gallery a img:hover{
+  transform: scale(1.3);
+}
